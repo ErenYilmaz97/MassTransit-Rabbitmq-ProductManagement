@@ -11,6 +11,7 @@ namespace ProductManagement.MessageContracts.Consumers
     {
         public async Task Consume(ConsumeContext<IProductRegistrationCommand> context)
         {
+            //VERİ TABANINA EKLEME KODLARI
             Console.WriteLine($"{context.Message.ProductName} isimli ürün ({context.Message.Quantity} Adet) :");
             Console.WriteLine($"Veritabanına kayıt edilmiştir.");
             Console.WriteLine($"Facebook'ta yayınlanacaktır.");
